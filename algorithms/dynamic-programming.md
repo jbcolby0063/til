@@ -1,0 +1,40 @@
+# Dynamic Programming 
+### Summary
+---
+In dynamic programming, you save the result in a separate memory (array, list, ...) and prevent it from being calculated again. 
+
+There are 2 methods for dynamic programming:  
+1. Top-Down (Memoization) 
+ 
+    - Save the result in a memory and bring that result back when the same problem appears
+    ```python
+    
+    d = [0] * 100
+
+    def fibo(x):
+        if x == 1 or x == 2:
+            return 1
+        if d[x] != 0: # if this is already calculated
+            return d[x]
+        d[x] = fibo(x - 1) + fibo(x - 2) # if this hasn't been calculated yet 
+        return d[x]
+
+    print(fibo(99))
+    
+    ```
+2. Bottom-Up 
+
+    - Typical dynamic programming 
+    - Accumulate the result from the bottom (use DP memory)
+    ```python
+    d = [0] * 100
+
+    d[1] = 1
+    d[2] = 1
+    n = 99
+
+    for i in range(3, n + 1):
+        d[i] = d[i - 1] + d[i - 2]
+
+    print(d[n])
+    ```
