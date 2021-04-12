@@ -1,10 +1,13 @@
 # Dynamic Programming 
-### Summary
----
 In dynamic programming, you save the result in a separate memory (array, list, ...) and prevent it from being calculated again. 
 
+Dynamic programming can be used when a certain problem meets two conditions:
+
+1. **Optimal Substructure**: Each part of the problem can be solved by combining its small parts.  
+2. **Overlapping Subproblem**: Same part of the problem is repeated.
+
 There are 2 methods for dynamic programming:  
-1. Top-Down (Memoization) 
+1. **Top-Down (Memoization)**
  
     - Save the result in a memory and bring that result back when the same problem appears
     ```python
@@ -22,7 +25,7 @@ There are 2 methods for dynamic programming:
     print(fibo(99))
     
     ```
-2. Bottom-Up 
+2. **Bottom-Up**
 
     - Typical dynamic programming 
     - Accumulate the result from the bottom (use DP memory)
@@ -38,3 +41,4 @@ There are 2 methods for dynamic programming:
 
     print(d[n])
     ```
+    
