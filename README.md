@@ -15,3 +15,4 @@ My short write-ups on new things I learned from videos, editorials, and projects
 
 ### React
 - [Basic Structure](https://github.com/jbcolby0063/til/blob/main/react/basic-structure.md)
+- [Props and State](https://github.com/jbcolby0063/til/blob/main/react/props-and-state.md)
