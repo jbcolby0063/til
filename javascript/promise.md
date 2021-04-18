@@ -1,8 +1,8 @@
 # Promise
 
-Promise is like committing to do something. 
+```promise``` is like committing to do something. 
 
-If the promise is completed, it returns "resolved". But if the promise is failed, it returns "rejected".
+If the ```promise``` is completed, it returns "resolved". But if the ```promise``` is failed, it returns "rejected".
 
 The return value from "resolved" goes to ```then()```, and the return value from "rejected" goes to ```catch()```
 
