@@ -1,6 +1,6 @@
 # Props and State
 
-Props is used when you want to pass the data to the outside component and make that 
+```props``` is used when you want to pass the data to the outside component and make that 
 component to initialize with the data you passed. 
 
 But the data cannot be modified inside the 
@@ -19,9 +19,9 @@ const SecondComponent = (props) => {
     return <p>{props.msg}</p>; 
 };
 ```
-State is used when you want to store the data inside the component and keep updating inside using ```setState()``` method.
+```state``` is used when you want to store the data inside the component and keep updating inside using ```setState()``` method.
 
-However, State data cannot be accessed from outside.
+However, ```state``` data cannot be accessed from outside.
 
 ```JavaScript
 class FirstComponent extends React.Component {    
