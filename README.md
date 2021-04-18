@@ -3,7 +3,7 @@
 
 My short write-ups on new things I learned from videos, editorials, and projects.  
 
-5 TILs so far...  
+6 TILs so far...  
 
 ---
 
@@ -17,3 +17,4 @@ My short write-ups on new things I learned from videos, editorials, and projects
 ### React
 - [Basic Structure](https://github.com/jbcolby0063/til/blob/main/react/basic-structure.md)
 - [Props and State](https://github.com/jbcolby0063/til/blob/main/react/props-and-state.md)
+- [useEffect](https://github.com/jbcolby0063/til/blob/main/react/useEffect.md)
