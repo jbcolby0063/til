@@ -26,7 +26,7 @@ However, ```state``` data cannot be accessed from outside.
 ```JavaScript
 class FirstComponent extends React.Component {    
     constructor(props) {    
-        super(props)
+        super(props);
         this.state = {      
             msg: "updating"   
         };  
