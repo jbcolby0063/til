@@ -53,3 +53,10 @@ function Home() {
     <button type="button" onClick={handleClick}> About Us </button>
    );
 }
+```
+In some cases, when you want to restrict users from accessing the home page without log in, you can simply use ```Redirect```:
+```javascript
+import { Redirect } from 'react-router-dom'
+
+isLoggedIn ? <Component /> : <Redirect to="/login" /> // if user is not logged in, then redirect to login page and restrict the user's access to home page
+```
