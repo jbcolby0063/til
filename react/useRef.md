@@ -5,8 +5,8 @@
 The passed argument is initialized in ```.current``` property of ```useRef```, and the return object persists 
 for the full lifetime of the component. 
 
-The important part of ```useRef``` is that no matter how many times we change the return object, it will <strong>never 
-cause our componenet to rerender</strong>. This is because ```useRef``` set the object separate from the component render
+The important part of ```useRef``` is that no matter how many times we change the return object, it will <em>never 
+cause our componenet to rerender</em>. This is because ```useRef``` set the object separate from the component render
 cycle. 
 
 There are two main uses of ```useRef```:
