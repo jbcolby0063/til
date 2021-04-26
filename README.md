@@ -15,6 +15,9 @@ My short write-ups on new things I learned from videos, editorials, and projects
 - [Promise](https://github.com/jbcolby0063/til/blob/main/javascript/promise.md)
 - [Question Mark](https://github.com/jbcolby0063/til/blob/main/javascript/question-mark.md)
 
+### JSON
+- [JSON.stringify()](https://github.com/jbcolby0063/til/blob/main/json/stringify.md)
+
 ### React
 - [Basic Structure](https://github.com/jbcolby0063/til/blob/main/react/basic-structure.md)
 - [Props and State](https://github.com/jbcolby0063/til/blob/main/react/props-and-state.md)
