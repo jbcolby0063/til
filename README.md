@@ -19,7 +19,7 @@ My short write-ups on new things I learned from videos, editorials, and projects
 - [JSON.stringify()](https://github.com/jbcolby0063/til/blob/main/json/stringify.md)
 
 ### Python
--[OS](https://github.com/jbcolby0063/til/blob/main/python/os.md)
+- [OS](https://github.com/jbcolby0063/til/blob/main/python/os.md)
 
 ### React
 - [Basic Structure](https://github.com/jbcolby0063/til/blob/main/react/basic-structure.md)
