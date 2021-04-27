@@ -3,7 +3,7 @@
 
 My short write-ups on new things I learned from videos, editorials, and projects.  
 
-11 TILs so far...  
+12 TILs so far...  
 
 ---
 
@@ -17,6 +17,9 @@ My short write-ups on new things I learned from videos, editorials, and projects
 
 ### JSON
 - [JSON.stringify()](https://github.com/jbcolby0063/til/blob/main/json/stringify.md)
+
+### Python
+-[OS](https://github.com/jbcolby0063/til/blob/main/python/os.md)
 
 ### React
 - [Basic Structure](https://github.com/jbcolby0063/til/blob/main/react/basic-structure.md)
