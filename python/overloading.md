@@ -9,10 +9,15 @@ class Time:
         self.minute = minute
         self.second = second
 
-    def __str__(self): # changes the return of print()
+    def __str__(self): # changes the return of print() for Time class objects
         return "{0} : {1} : {2}".format(self.hour, self.minute, self.second)
+    
+    def __add__(self, other): # changes the return of + operator for Time class objects 
+        return self.hour + other.hour
         
-time = Time(11, 25, 30)
-print(time) # 11 : 25 : 30
+time1 = Time(11, 25, 30)
+time2 = Time(12, 30, 30)
 
+print(time1) # 11 : 25 : 30
+print(time1 + time2) # 23
 ```
