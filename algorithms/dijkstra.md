@@ -40,4 +40,25 @@ def get_smallest_node(): # Among the nodes that are not visited, choose a node t
             min_value = distance[i]
             index = i
     return index
+
+def dijkstra(start):
+    distance[start] = 0 # set the distance to itself as 0
+    visited[start] = True
+    for j in graph[start]: # initialize all distance values that are connected to the starting node
+        distance[j[0]] = j[1] 
+    for i in range(n - 1):
+        now = get_smallest_node() # get a node
+        visited[now] = True
+        for j in graph[now]: # initialize all distance values that are connected to the chosen node
+            cost = distance[now] + j[1] # distance value from start node to chosen node + distance from chosen node to connected node
+            if cost < distance[j[0]]: # if this value is shorter
+                distance[j[0]] = cost # update the distance table
+
+dijkstra(start)
+
+for i in range(1, n + 1):
+    if distance[i] == INF:
+        print("INFINITY") 
+    else:
+        print(distance[i])
 ```
