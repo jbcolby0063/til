@@ -3,7 +3,7 @@
 
 My short write-ups on new things I learned from videos, editorials, and projects.  
 
-15 TILs so far...  
+16 TILs so far...  
 
 ---
 
@@ -11,6 +11,7 @@ My short write-ups on new things I learned from videos, editorials, and projects
 - [Dijkstra's Algorithms](https://github.com/jbcolby0063/til/blob/main/algorithms/dijkstra.md)
 - [Dynamic Programming](https://github.com/jbcolby0063/til/blob/main/algorithms/dynamic-programming.md)
 - [Greedy](https://github.com/jbcolby0063/til/blob/main/algorithms/greedy.md)
+- [Priority Queue](https://github.com/jbcolby0063/til/blob/main/algorithms/priority-queue.md)
 
 ### JavaScript
 - [Promise](https://github.com/jbcolby0063/til/blob/main/javascript/promise.md)
