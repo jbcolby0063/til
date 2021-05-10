@@ -18,6 +18,9 @@ class Time:
     def __lt__(self, other): # override the behavior of the "less than" operator. Compare two objects based on their minutes.
         return self.minute < other.minute
     
+    def __gt__(self, other): # override the behavior of the "greater than" operator. Compare two objects based on their minutes.
+        return self.minute > other.minute
+    
     def __len__(self): # convert the time into seconds and return that value when len() is invoked
         return self.hour * 3600 + self.minute * 60 + self.second
         
@@ -27,5 +30,6 @@ time2 = Time(12, 30, 30)
 print(time1) # 11 : 25 : 30
 print(time1 + time2) # 23
 print(time2 < time1) # False
+print(time2 > time1) # True
 print(len(time1)) # 41130
 ```
