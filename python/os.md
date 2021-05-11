@@ -33,3 +33,6 @@ print(os.path.isdir('/Users/myuser/Desktop/Python/folder2')) # True
 # os.listdir -> shows all the files and directories in current directory
 print(os.listdir(os.getcwd())) # ['anotherfile.py'] 
 ```
+More ```os``` functions can be found [here](https://docs.python.org/3/library/os.html).
+
+If you want more functions that manipulate paths, look up [os.path module](https://docs.python.org/3/library/os.path.html).
