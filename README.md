@@ -3,7 +3,7 @@
 
 My short write-ups on new things I learned from videos, editorials, and projects.  
 
-16 TILs so far...  
+17 TILs so far...  
 
 ---
 
@@ -12,6 +12,7 @@ My short write-ups on new things I learned from videos, editorials, and projects
 - [Dynamic Programming](https://github.com/jbcolby0063/til/blob/main/algorithms/dynamic-programming.md)
 - [Greedy](https://github.com/jbcolby0063/til/blob/main/algorithms/greedy.md)
 - [Priority Queue](https://github.com/jbcolby0063/til/blob/main/algorithms/priority-queue.md)
+- [Stack](https://github.com/jbcolby0063/til/blob/main/algorithms/stack.md)
 
 ### JavaScript
 - [Promise](https://github.com/jbcolby0063/til/blob/main/javascript/promise.md)
