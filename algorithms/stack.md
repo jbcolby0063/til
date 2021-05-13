@@ -8,6 +8,8 @@ Just think about a pile of plates as an example:
 
 [![stack1.png](https://i.postimg.cc/sXn9g1xM/stack1.png)](https://postimg.cc/9R7qxmG2)
 
+The opposite of ```stack``` is [queue](https://github.com/jbcolby0063/til/blob/main/algorithms/queue.md).
+
 Here's a simple code for ```stack```:
 ```python
 stack = []
