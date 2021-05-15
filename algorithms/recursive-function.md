@@ -16,3 +16,14 @@ def recursive_function(i):
     
 recursive_function(1) # starting recursive function # 1, ... , starting recursive function # 100, ending recursive function # 100, ... , ending recursive function # 1
 ```
+
+You can calculate a factorial (n!) using ```recursive function```:
+```python
+def factorial_recursive(n):
+    if n <= 1: # 0!, 1! = 1
+        return 1
+    return n * factorial_recursive(n - 1) # n! = n * (n - 1)! # stack up the function 
+
+
+print(factorial_recursive(5)) # 120
+```
