@@ -3,11 +3,12 @@
 
 My short write-ups on new things I learned from videos, editorials, and projects.  
 
-19 TILs so far...  
+20 TILs so far...  
 
 ---
 
 ### Data Structure & Algorithms
+- [DFS](https://github.com/jbcolby0063/til/blob/main/algorithms/dfs.md)
 - [Dijkstra's Algorithms](https://github.com/jbcolby0063/til/blob/main/algorithms/dijkstra.md)
 - [Dynamic Programming](https://github.com/jbcolby0063/til/blob/main/algorithms/dynamic-programming.md)
 - [Greedy](https://github.com/jbcolby0063/til/blob/main/algorithms/greedy.md)
