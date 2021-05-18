@@ -12,4 +12,23 @@ So the process will be:
 3. If the connected nodes are all visited, backtrack the stack and find a node that is connected to unvisited nodes. 
 4. Repeat #2 and #3.
 
+Here's a simple code for ```DFS```:
+```python
+# data table 
+graph = [
+    [], 
+    [2, 3, 8], # all nodes that are connected to no.1 node
+    [1, 7], # ... no.2 node
+    [1, 4, 5], # ... no.3 node
+    [3, 5], # ... no.4 node
+    [3, 4], # ... no.5 node
+    [7], # ... no.6 node
+    [2, 6, 8], # ... no.7 node
+    [1, 7] # ... no.8 node
+]
+
+visited = [False] * 9 # initialize all nodes as unvisited
+```
+
 [![2021-05-16-9-01-13.png](https://i.postimg.cc/597D8t5w/2021-05-16-9-01-13.png)](https://postimg.cc/fkdHNDrL)
+
