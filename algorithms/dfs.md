@@ -28,6 +28,16 @@ graph = [
 ]
 
 visited = [False] * 9 # initialize all nodes as unvisited
+
+def dfs(graph, v, visted):
+    visited[v] = True # mark the current node as visited
+    print(v, end='->')
+    for i in graph[v]: # visit the connected nodes
+        if not visited[i]:
+            dfs(graph, i, visited) # stack the unvisited nodes up and keep going down its path
+            # once it hits the end node, it backtracks the stack and explores the nodes that are connected to unvisited nodes
+
+dfs(graph, 1, visited) # 1->2->7->6->8->3->4->5->
 ```
 
 [![2021-05-16-9-01-13.png](https://i.postimg.cc/597D8t5w/2021-05-16-9-01-13.png)](https://postimg.cc/fkdHNDrL)
