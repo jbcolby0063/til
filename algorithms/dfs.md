@@ -34,7 +34,7 @@ def dfs(graph, v, visted):
     print(v, end='->')
     for i in graph[v]: # visit the connected nodes
         if not visited[i]:
-            dfs(graph, i, visited) # stack the unvisited nodes up and keep going down its path
+            dfs(graph, i, visited) # stack the unvisited nodes up (recursive function) and keep going down its path
             # once it hits the end node, it backtracks the stack and explores the nodes that are connected to unvisited nodes
 
 dfs(graph, 1, visited) # 1->2->7->6->8->3->4->5->
