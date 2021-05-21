@@ -6,6 +6,8 @@ It starts from the top node of a tree and goes down a given path as far as it ca
 
 ```DFS``` uses [recursive function](https://github.com/jbcolby0063/til/blob/main/algorithms/recursive-function.md) and stacks up the nodes on its path. 
 
+The difference between ```DFS``` and [BFS](https://github.com/jbcolby0063/til/blob/main/algorithms/bfs.md) is that while ```DFS``` explores the nodes as deep as possible from the start node, ```BFS``` explores all the neighbor nodes in the same depth level.
+
 So the process will be:
 1. Find the start node and mark it as visited.
 2. If the connected nodes are not visited yet, stack that node up and visit the node.
