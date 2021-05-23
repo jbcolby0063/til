@@ -15,6 +15,8 @@ So the process will be:
 3. Repeat #2.
 
 ```python
+from collections import deque
+
 # data table
 graph = [
     [], 
@@ -30,6 +32,19 @@ graph = [
 
 # initialize all nodes as unvisited 
 visited = [False] * 9
+
+def bfs(graph, start, visited):
+    queue = deque([start]) # apply queue
+    visited[start] = True # mark as visited
+    while queue: # repeat until empty queue 
+        v = queue.popleft() # get the node that came first 
+        print(v, end='->')
+        for i in graph[v]: 
+            if not visited[i]:
+                queue.append(i) # place all connected nodes that are not visited in queue
+                visited[i] = True # mark those as visited 
+                 
+bfs(graph, 1, visited) # 1->2->3->8->7->4->5->6->
 ```
 [![2021-05-16-9-01-13.png](https://i.postimg.cc/597D8t5w/2021-05-16-9-01-13.png)](https://postimg.cc/fkdHNDrL)
 
