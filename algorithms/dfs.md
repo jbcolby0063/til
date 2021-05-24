@@ -4,7 +4,7 @@
 
 It starts from the top node of a tree and goes down a given path as far as it can, then backtracks until it finds an unexplored path, and then explores it again. 
 
-```DFS``` uses [recursive function](https://github.com/jbcolby0063/til/blob/main/algorithms/recursive-function.md) and stacks up the nodes on its path. 
+```DFS``` uses [recursive function](https://github.com/jbcolby0063/til/blob/main/algorithms/recursive-function.md) and [stacks up](https://github.com/jbcolby0063/til/blob/main/algorithms/stack.md) the nodes on its path. 
 
 The difference between ```DFS``` and [BFS](https://github.com/jbcolby0063/til/blob/main/algorithms/bfs.md) is that while ```DFS``` explores the nodes as deep as possible from the start node, ```BFS``` explores all the neighbor nodes in the same depth level.
 
