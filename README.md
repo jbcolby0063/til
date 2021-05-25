@@ -3,7 +3,7 @@
 
 My short write-ups on new things I learned from videos, editorials, and projects.  
 
-21 TILs so far...  
+22 TILs so far...  
 
 ---
 
@@ -26,6 +26,7 @@ My short write-ups on new things I learned from videos, editorials, and projects
 - [JSON.stringify()](https://github.com/jbcolby0063/til/blob/main/json/stringify.md)
 
 ### Python
+- [lambda](https://github.com/jbcolby0063/til/blob/main/python/lambda.md)
 - [matplotlib.pyplot](https://github.com/jbcolby0063/til/blob/main/python/matplotlib_pyplot.md)
 - [OS](https://github.com/jbcolby0063/til/blob/main/python/os.md)
 - [overloading](https://github.com/jbcolby0063/til/blob/main/python/overloading.md)
