@@ -34,3 +34,16 @@ if result == None:
 else: 
     print(result + 1) # 8
 ```
+Python has its own ```binary search``` library:
+```python
+# bisect_left(a, x): return the leftmost index position for x in a sorted array a (1 2 ^ 4 4 8)
+# bisect_right(a, x): return the rightmost index position for x in a sorted array a (1 2 4 4 ^ 8)
+
+from bisect import bisect_left, bisect_right
+
+a = [1, 2, 4, 4, 8]
+x = 4
+
+print(bisect_left(a, x)) # 2
+print(bisect_right(a, x)) # 4
+```
