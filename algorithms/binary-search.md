@@ -51,4 +51,3 @@ print(bisect_right(a, x)) # 4
 count_x = bisect_right(a, x) - bisect_left(a, x)
 print(count_x) # 2
 ```
-```
