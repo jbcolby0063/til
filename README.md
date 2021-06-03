@@ -3,7 +3,7 @@
 
 My short write-ups on new things I learned from videos, editorials, and projects.  
 
-23 TILs so far...  
+24 TILs so far...  
 
 ---
 
@@ -17,6 +17,7 @@ My short write-ups on new things I learned from videos, editorials, and projects
 - [Priority Queue](https://github.com/jbcolby0063/til/blob/main/algorithms/priority-queue.md)
 - [Queue](https://github.com/jbcolby0063/til/blob/main/algorithms/queue.md)
 - [Recursive Function](https://github.com/jbcolby0063/til/blob/main/algorithms/recursive-function.md)
+- [Sorting](https://github.com/jbcolby0063/til/blob/main/algorithms/sorting.md)
 - [Stack](https://github.com/jbcolby0063/til/blob/main/algorithms/stack.md)
 
 ### JavaScript
