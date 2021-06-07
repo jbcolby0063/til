@@ -52,3 +52,18 @@
    - 3(pivot) 2 4 5 1 --> 3(pivot) 2 4(bigger) 5 1(smaller) --> 3(pivot) 2 1 5 4 --> 3(pivot) 2 1(smaller) 5(bigger) 4 --> 2 1 3 5 4
    - time complexity of O(NlogN) since it divides the array by half every time. But if the array is already almost sorted, quick sort can be inefficient, with 
      O(N^2)
+   ```python
+   array = [5, 7, 9, 0, 3, 1, 6, 2, 4, 8]
+
+   def quick_sort(array):
+       if len(array) <= 1: # if there is nothing to sort in the array 
+           return array
+       pivot = array[0]
+       tail = array[1:]
+       left = [x for x in tail if pivot > x] # elements smaller than pivot
+       right = [x for x in tail if pivot < x] # elements bigger than pivot 
+
+       return quick_sort(left) + [pivot] + quick_sort(right) # use recursive function for divided arrays 
+
+   print(quick_sort(array)) # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+   ```
