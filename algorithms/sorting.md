@@ -95,3 +95,7 @@
    quick_sort(array, 0, len(array) - 1)
    print(array) # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
    ```
+5. Counting Sort:
+   - sorts an element in an array by counting the number of occurrences of each element 
+   - guarantees the time complexity of O(N + K) if the number of elements are N and maximum is K. However, it can be a memory waste when the elements in the array are just 0 and 999,999
+   - create a list that can store the number of occurrences for each element --> after storing all data, print each element based on their number of occurrences
