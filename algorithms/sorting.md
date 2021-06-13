@@ -99,3 +99,12 @@
    - sorts an element in an array by counting the number of occurrences of each element 
    - guarantees the time complexity of O(N + K) if the number of elements are N and maximum is K. However, it can be a memory waste when the elements in the array are just 0 and 999,999
    - create a list that can store the number of occurrences for each element --> after storing all data, print each element based on their number of occurrences
+   ```python
+   array = [7, 5, 9, 0, 3, 1, 6, 2, 9, 1, 4, 8, 0, 5, 2]
+   lst = [0] * (max(array) + 1) 
+   for i in array:
+       lst[i] += 1 # store the number of occurrences for each element
+   for i in range(len(lst)): 
+       for j in range(lst[i]): # print each element based on their number of occurrences
+           print(i, end=" ") # 0 0 1 1 2 2 3 4 5 5 6 7 8 9 9 
+   ```
