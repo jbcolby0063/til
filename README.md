@@ -3,7 +3,7 @@
 
 My short write-ups on new things I learned from videos, editorials, and projects.  
 
-24 TILs so far...  
+25 TILs so far...  
 
 ---
 
@@ -26,6 +26,7 @@ My short write-ups on new things I learned from videos, editorials, and projects
 
 ### JSON
 - [JSON.stringify()](https://github.com/jbcolby0063/til/blob/main/json/stringify.md)
+- [package-lock.json](https://github.com/jbcolby0063/til/blob/main/json/package-lock.md)
 
 ### Python
 - [lambda](https://github.com/jbcolby0063/til/blob/main/python/lambda.md)
