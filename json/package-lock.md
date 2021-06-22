@@ -16,4 +16,6 @@ For example, let's say there is a project, and this project has a ```package.jso
 
 However, ```package-lock.json``` sets the versions of each installed packages in stone, and ```npm``` will use those exact versions when running ```npm install```. 
 
-This way, every machine will be able to run the project in the same environment and same dependencies. 
+This way, every machine will be able to run the project in the same environment and same dependencies.
+
+Therefore, the ```package-lock.json``` file needs to be committed to your Git repository, so it can be fetched by other people. 
