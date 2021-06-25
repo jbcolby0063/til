@@ -1,6 +1,6 @@
 # Permutation 
 
-```Permutation``` is an arrangement of objects in which the order matters. 
+```Permutation``` is an arrangement of objects in which the order matters. (<-> [Combination](https://github.com/jbcolby0063/til/blob/main/algorithms/combination.md))
 
 For example, "AB" and "BA" are count as different arrangements. 
 
