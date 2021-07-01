@@ -14,3 +14,4 @@ data = ["A", "B", "C"]
 result = list(combinations(data, 2)) # combination of 2
 print(result) # [('A', 'B'), ('A', 'C'), ('B', 'C')]
 ```
+You can also generate ```combination``` with repetitions (e.g. "AA" and "BB" are allowed) by importing ```combinations_with_replacement```:
