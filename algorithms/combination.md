@@ -5,7 +5,7 @@
 For example, "AB" and "BA" are count as same arrangements. 
 
 Python provides ```combinations``` library through ```itertools``` package. This library takes a 
-list as an input and returns an object list of tuples that contain all ```combinations```:
+list as an input and returns an object list of tuples that contains all ```combinations```:
 ```python
 from itertools import combinations
 
