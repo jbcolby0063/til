@@ -5,7 +5,7 @@
 For example, "AB" and "BA" are count as different arrangements. 
 
 Python provides ```permutations``` library through ```itertools``` package. This library takes a 
-list as an input and returns an object list of tuples that contain all ```permutations```:
+list as an input and returns an object list of tuples that contains all ```permutations```:
 ```python
 from itertools import permutations 
 
