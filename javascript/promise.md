@@ -31,6 +31,6 @@ function userSubject() {
 userSubject().then((message) => {
     console.log(message)
 }).catch((info) => {
-    console.log(info.message + " User likes " + info.subject)
+    console.log(info.message + " User likes " + info.subject) // User doesn't like history and math. User likes English
 })
 ```
