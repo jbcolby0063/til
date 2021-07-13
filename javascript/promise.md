@@ -30,7 +30,7 @@ function userSubject() {
 
 userSubject().then((message) => {
     console.log(message)
-}).catch((info) => {
-    console.log(info.message + " User likes " + info.subject) // User doesn't like history and math. User likes English
+}).catch((info) => { // since userSubject() Promise returns reject, it will print as below...
+    console.log(info.message + " User likes " + info.subject) // "User doesn't like history and math. User likes English"
 })
 ```
