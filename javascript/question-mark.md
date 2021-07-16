@@ -2,6 +2,8 @@
 
 The question mark, ```?```, can be used as if statement when paired with ```:```.
 
+You must put a true value on the left and a false value on the right.
+
 The format should be like:
 > Condition ```?``` Value if True ```:``` Value if False
 
