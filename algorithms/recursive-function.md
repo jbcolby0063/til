@@ -4,7 +4,7 @@
 
 ```Recursive Function``` uses [stack](https://github.com/jbcolby0063/til/blob/main/algorithms/stack.md) concept since it piles up the functions. 
 
-When you are using ```recursive function```, you need to make sure to put <strong>end condition</strong> for the function in order to prevent it from infinite loop.
+When you are using ```recursive function```, you need to make sure to put <strong>"end condition"</strong> for the function in order to prevent it from infinite loop.
 
 ```python
 def recursive_function(i):
