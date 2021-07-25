@@ -3,7 +3,7 @@
 ```Greedy``` is an algorithm that chooses a path that seems to be the best at the moment. 
 
 ```Greedy``` algorithm does not guarantee an optimal solution. A path chosen by ```greedy``` might seem like the 
-best at the moment, but it might turn out another path is better than the ```greedy``` one. 
+best at the moment, but it might turn out another path is better (more efficient) than the ```greedy``` one. 
 
 Therefore, it is important to analyze the validity of the ```greedy``` method before use. (e.g. Will this guarantee the optimal solution?)
 
