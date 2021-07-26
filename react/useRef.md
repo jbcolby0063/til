@@ -1,6 +1,6 @@
 # useRef
 
-```useRef``` is a hook that takes only one argument and returns a mutable ref object.
+```useRef``` is a hook that takes only one argument and returns mutable ref object.
 
 The passed argument is initialized in ```.current``` property of ```useRef```, and the return object persists 
 for the full lifetime of the component. 
