@@ -1,6 +1,6 @@
 # Breadth First Search (BFS)
 
-```Breadth First Search (BFS)``` is an algorithm for searching a graph or tree data structure.
+```Breadth First Search (BFS)``` is an algorithm for searching a certain graph or tree data structure.
 
 It starts at the tree root and explores all of the connected nodes before moving to the nodes of the next depth level. 
 
