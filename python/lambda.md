@@ -14,7 +14,7 @@ The syntax for ```lambda``` function is:
 ```python
 array = [("Jake", 50), ("Steve", 32), ("David", 74)]
 
-# sort array by the number
+# sort the "array" by the number
 print(sorted(array, key=lambda x: x[1])) # [('Steve', 32), ('Jake', 50), ('David', 74)] 
 ```
 ```Lambda``` can also be used for map function:
