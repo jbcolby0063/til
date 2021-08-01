@@ -16,7 +16,7 @@ least number of change you can give?
 n  = 260 
 count = 0
 
-# count from the biggest dollar first because the bigger dollar is always a multiple of smaller dollar
+# count from dollar with the biggest value first because the bigger value dollar is always a multiple of smaller value dollar
 # EX) you can give the customer $100 change with just one $100, instead of five $20
 array = [100, 20, 10, 5]
 
