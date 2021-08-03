@@ -9,7 +9,7 @@ This solves the problem that ```package.json``` has.
 In ```package.json```, it uses ```version range``` to set which versions you want to 
 upgrade to (patch or minor). 
 
-So when you trying to copy a certain project in another computer using ```npm install```, it will install 
+So when you trying to reproduce a certain project in another computer using ```npm install```, it will install 
 different version of a package if the patch or minor of that package has been newly released. 
 
 For example, let's say there is a project that contains a ```package.json``` file with express package of "^4.16.3"(^ = patch and minor releases update) version range. And when there was a new minor release for the package and you try to replicate the same project in another computer using ```npm install```, it will install different versions like "4.16.4" or "4.17.1". So the original project and the newly initialized project are actually different. 
