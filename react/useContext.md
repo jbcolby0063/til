@@ -1,7 +1,7 @@
 # useContext
 
 ```useContext``` is a hook that creates global data that can be accessed through specified children 
-elements. 
+components. 
 
 In parent component: 
 ```javascript
