@@ -29,7 +29,7 @@
    print(array) # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
    ```
 3. Insertion Sort:
-   - elements from an unsorted array are selected and placed at the correct position. This is repeated until the array becomes sorted. 
+   - elements from an unsorted array are selected and placed at the right position. This is repeated until the array becomes sorted. 
    - time complexity is O(N^2). If the array is already almost sorted, the time complexity becomes O(N)
    - 4 3 2 10 --> 3 4 2 10 --> 2 3 4 10
    ```python
