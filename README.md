@@ -3,7 +3,7 @@
 
 My short write-ups on new things I learned from videos, editorials, and projects.  
 
-27 TILs so far...  
+28 TILs so far...  
 
 ---
 
@@ -23,6 +23,7 @@ My short write-ups on new things I learned from videos, editorials, and projects
 - [Stack](https://github.com/jbcolby0063/til/blob/main/algorithms/stack.md)
 
 ### JavaScript
+- [Object.entries()](https://github.com/jbcolby0063/til/blob/main/javascript/object_entries.md)
 - [Promise](https://github.com/jbcolby0063/til/blob/main/javascript/promise.md)
 - [Question Mark](https://github.com/jbcolby0063/til/blob/main/javascript/question-mark.md)
 
