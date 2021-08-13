@@ -3,7 +3,7 @@
 
 My short write-ups on new things I learned from videos, editorials, and projects.  
 
-28 TILs so far...  
+29 TILs so far...  
 
 ---
 
@@ -39,6 +39,7 @@ My short write-ups on new things I learned from videos, editorials, and projects
 
 ### React
 - [Basic Structure](https://github.com/jbcolby0063/til/blob/main/react/basic-structure.md)
+- ['Objects are not valid as a React child' Error](https://github.com/jbcolby0063/til/blob/main/react/object-not-valid-error.md)
 - [Props and State](https://github.com/jbcolby0063/til/blob/main/react/props-and-state.md)
 - [React Router](https://github.com/jbcolby0063/til/blob/main/react/react-router.md)
 - [useContext](https://github.com/jbcolby0063/til/blob/main/react/useContext.md)
