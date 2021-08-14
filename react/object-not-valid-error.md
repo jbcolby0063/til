@@ -43,4 +43,21 @@ class App extends Component {
   }
 }
 ```
-3.
+3. Render object as array using [Object.entries()](https://github.com/jbcolby0063/til/blob/main/javascript/object_entries.md)
+```javascript
+class App extends Component {
+  render() {
+    const obj1 = {"A": "hello", "B": "world!"}
+
+    return (
+      <div className="App">
+        <div>{Object.entries(obj1)}</div> // output: AhelloBworld!
+
+        <div>{"key: " + Object.entries(obj1)[0][0] + ", " + "value: " + Object.entries(obj1)[0][1]}</div> // output: key: A, value: hello
+
+        <div>{"key: " + Object.entries(obj1)[1][0] + ", " + "value: " + Object.entries(obj1)[1][1]}</div> // output: key: B, value: world!
+      </div>
+    )
+  }
+}
+```
