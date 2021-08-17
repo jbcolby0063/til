@@ -17,7 +17,7 @@ class App extends Component {
 
 You can solve this error by using several methods:
 
-1. Render object as strings using [JSON.stringify()](https://github.com/jbcolby0063/til/blob/main/json/stringify.md):
+1. Render object as a string using [JSON.stringify()](https://github.com/jbcolby0063/til/blob/main/json/stringify.md):
 ```javascript
 class App extends Component {
   render() {
@@ -43,7 +43,7 @@ class App extends Component {
   }
 }
 ```
-3. Render object as array using [Object.entries()](https://github.com/jbcolby0063/til/blob/main/javascript/object_entries.md)
+3. Render object as an array using [Object.entries()](https://github.com/jbcolby0063/til/blob/main/javascript/object_entries.md)
 ```javascript
 class App extends Component {
   render() {
