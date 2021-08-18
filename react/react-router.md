@@ -46,7 +46,7 @@ function Home() {
   const history = useHistory();
   
   function handleClick() {
-    history.push('/about');
+    history.push('/about'); // go straight to '/about' page once the button is clicked
   }
 
   return (
