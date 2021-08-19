@@ -3,7 +3,7 @@
 ```useContext``` is a hook that creates global data that can be accessed through specified children 
 components. 
 
-In parent component: 
+In parent component ```myApp```: 
 ```javascript
 import React, { useContext } from 'react';
 
