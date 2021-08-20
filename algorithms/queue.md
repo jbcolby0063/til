@@ -16,14 +16,14 @@ Here's a simple code for ```queue```:
 from collections import deque # use "deque" library
 queue = deque()
 
-queue.append(5) # first in
-queue.append(2) # second in 
-queue.append(3)
-queue.append(7)
-queue.popleft() # first out 
-queue.append(1) 
-queue.append(4)
-queue.popleft() # second out
+queue.append(5) # first in; [5]
+queue.append(2) # second in; [5, 2]
+queue.append(3) # [5, 2, 3]
+queue.append(7) # [5, 2, 3, 7]
+queue.popleft() # first out; [2, 3, 7]
+queue.append(1) # [2, 3, 7, 1]
+queue.append(4) # [2, 3, 7, 1, 4]
+queue.popleft() # second out; [3, 7, 1, 4]
 
 print(queue) # deque([3, 7, 1, 4])
 queue.reverse() # reverse queue
