@@ -4,7 +4,7 @@
 
 So a data that comes in first is the first one to leave.
 
-A good example will be a ```queue``` of customers where the customer who came first is served first. 
+A good example will be a ```queue``` of customers where a customer who came first is served first. 
 
 The opposite of ```queue``` is [stack](https://github.com/jbcolby0063/til/blob/main/algorithms/stack.md).
 
