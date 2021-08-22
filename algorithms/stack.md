@@ -21,7 +21,7 @@ stack.append(7) # [5, 2, 3, 7]
 stack.pop() # take out the data on top (7); [5, 2, 3]
 stack.append(1) # [5, 2, 3, 1]
 stack.append(4) # [5, 2, 3, 1, 4]
-stack.pop() # take out the data on top (4) # [5, 2, 3, 1]
+stack.pop() # take out the data on top (4); [5, 2, 3, 1]
 
 print(stack) # [5, 2, 3, 1] --> right side is the top part of the stack
 ```
