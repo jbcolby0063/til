@@ -14,14 +14,14 @@ Here's a simple code for ```stack```:
 ```python
 stack = []
 # push(5) - push(2) - push(3) - push(7) - pop() - push(1) - push(4) - pop()
-stack.append(5)
-stack.append(2)
-stack.append(3)
-stack.append(7)
-stack.pop() # take out the data on top (7)
-stack.append(1)
-stack.append(4)
-stack.pop() # take out the data on top (4)
+stack.append(5) # [5]
+stack.append(2) # [5, 2]
+stack.append(3) # [5, 2, 3]
+stack.append(7) # [5, 2, 3, 7]
+stack.pop() # take out the data on top (7); [5, 2, 3]
+stack.append(1) # [5, 2, 3, 1]
+stack.append(4) # [5, 2, 3, 1, 4]
+stack.pop() # take out the data on top (4) # [5, 2, 3, 1]
 
 print(stack) # [5, 2, 3, 1] --> right side is the top part of the stack
 ```
