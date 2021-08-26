@@ -13,7 +13,7 @@ The opposite of ```stack``` is [queue](https://github.com/jbcolby0063/til/blob/m
 Here's a simple code for ```stack```:
 ```python
 stack = []
-# push(5) - push(2) - push(3) - push(7) - pop() - push(1) - push(4) - pop()
+
 stack.append(5) # [5]
 stack.append(2) # [5, 2]
 stack.append(3) # [5, 2, 3]
