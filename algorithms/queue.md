@@ -12,7 +12,6 @@ The opposite of ```queue``` is [stack](https://github.com/jbcolby0063/til/blob/m
 
 Here's a simple code for ```queue```:
 ```python
-# push(5) - push(2) - push(3) - push(7) - pop() - push(1) - push(4) - pop()
 from collections import deque # use "deque" library
 queue = deque()
 
