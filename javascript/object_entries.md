@@ -8,7 +8,7 @@ const object1 = {
   b: 'world'
 };
 
-console.log(Object.entries(object1)) // Array [Array ["a", "hello"], Array ["b", "world"]]
+console.log(Object.entries(object1)) // [["a", "hello"], ["b", "world"]]
 ```
 
 It is therefore useful to get both key and value from a certain object.
