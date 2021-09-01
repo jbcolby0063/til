@@ -28,9 +28,9 @@ function userSubject() {
     })
 }
 
-userSubject().then((message) => {
+userSubject().then((message) => { // when userSubject() Promise is resolve...
     console.log(message)
-}).catch((info) => { // since userSubject() Promise returns reject, it will print as below...
+}).catch((info) => { // but since userSubject() Promise returns reject, it will print as below...
     console.log(info.message + " User likes " + info.subject) // "User doesn't like history and math. User likes English"
 })
 ```
