@@ -49,5 +49,5 @@ print(bisect_right(a, x)) # 4
 
 # You can use this library to see how many x are in a sorted array a
 count_x = bisect_right(a, x) - bisect_left(a, x)
-print(count_x) # 2
+print(count_x) # 2 (There are two 4s)
 ```
