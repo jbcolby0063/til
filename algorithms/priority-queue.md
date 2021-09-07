@@ -39,6 +39,6 @@ def heapsort(iterable): # Max Heap Sort
     return result
 
 result = heapsort([1, 3, 5, 7, 9, 2, 4, 6, 8, 0])
-print(result) # [9, 8, 7, 6, 5, 4, 3, 2, 1, 0] # and then the elements are in descending order
+print(result) # [9, 8, 7, 6, 5, 4, 3, 2, 1, 0] --> and then the elements are in descending order
 ```
 Since ```Heap``` data strucutre guarantees O(log N) time complexity, it can be effectively used in many different algorithms, including [Dijkstra algorithm](https://github.com/jbcolby0063/til/blob/main/algorithms/dijkstra.md).
