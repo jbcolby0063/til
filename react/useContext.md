@@ -23,7 +23,7 @@ In child component ```Test```:
 import React, { useContext } from 'react';
 
 Test = () => {
-    const msg = useContext(MessageContext); // access directly to the passing value "hello" from the parent component
+    const msg = useContext(MessageContext); // access directly to the passing value "hello" from the parent component <myApp />
     
     return (
         <div>Message: {msg}</div>
