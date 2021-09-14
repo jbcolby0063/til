@@ -26,7 +26,7 @@ Test = () => {
     const msg = useContext(MessageContext); // access directly to the passing value "hello" from the parent component <myApp />
     
     return (
-        <div>Message: {msg}</div>
+        <div>Message: {msg}</div> // Message: hello
      );
 }
 ```
