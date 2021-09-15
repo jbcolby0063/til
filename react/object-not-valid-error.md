@@ -8,7 +8,7 @@ class App extends Component {
     const obj1 = {"A": "hello", "B": "world!"}
     return (
       <div className="App">
-        {obj1} // ==> reason of the error (raw object)
+        {obj1} // ==> reason of the error (cannot call a raw object)
       </div>
     )
   }
