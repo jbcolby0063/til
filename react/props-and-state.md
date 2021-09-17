@@ -10,13 +10,13 @@ component that is receiving it from outside.
 class FirstComponent extends React.Component {    
     render() {    
         return (        
-            <SecondComponent msg="passing" />    
+            <SecondComponent msg="passing" />   
         );  
     }
 }
 
 const SecondComponent = (props) => {    
-    return <p>{props.msg}</p>; 
+    return <p>{props.msg}</p>; // passing 
 };
 ```
 ```state``` is used when you want to store the data inside the component and keep updating inside using ```setState()``` method.
