@@ -14,7 +14,7 @@ There are two main uses of ```useRef```:
 ```javascript
 const inputRef = useRef()
 
-<input type="text" ref={inputRef} /> // inputRef.current refers to this <input> tag
+<input type="text" ref={inputRef} /> // inputRef.current refers to this <input> tag (e.g. inputRef.current.value will give you the input value from this tag)
 ```
 2. Persist value 
 ```javascript
