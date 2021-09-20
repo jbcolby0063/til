@@ -11,9 +11,9 @@ import numpy as np
 f1 = plt.figure(1) # create a new figure #1
 plt.plot(year, attendance, 'o-b') # plot the data using "blue-circle" markers 
 plt.xticks(np.arange(year[0], year[-1] + 1, 4)) # set the x-axis ticks from 1967 to 2015 with an increment of 4
-plt.title("Super Bowl Attendance")
-plt.xlabel("year")
-plt.ylabel("attendance")
+plt.title("Super Bowl Attendance") # title 
+plt.xlabel("year") # x label
+plt.ylabel("attendance") # y label
 plt.grid() # configure the grid lines 
 f1.savefig("super-bowl-attendance-plot.pdf", bbox_inches='tight') # save the figure as pdf file
 
