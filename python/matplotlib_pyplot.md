@@ -5,8 +5,8 @@
 ```python 
 # Let's assume we have "year" and "attendance" array in here that show all of Super Bowl attendance from 1967 to 2015
 
-import matplotlib.pyplot as plt
-import numpy as np
+import matplotlib.pyplot as plt // figure, plot, xticks, ...
+import numpy as np // arrange
 
 f1 = plt.figure(1) # create a new figure #1
 plt.plot(year, attendance, 'o-b') # plot the data using "blue-circle" markers 
