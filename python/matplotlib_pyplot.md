@@ -5,7 +5,7 @@
 ```python 
 # Let's assume we have "year" and "attendance" array in here that show all of Super Bowl attendance from 1967 to 2015
 
-import matplotlib.pyplot as plt # figure, plot, xticks, title, xlabel, ylabel ...
+import matplotlib.pyplot as plt # figure, plot, xticks, title, xlabel, ylabel, grid ...
 import numpy as np # arrange
 
 f1 = plt.figure(1) # create a new figure #1
