@@ -25,9 +25,9 @@ print(os.path.exists('myfile.py')) # False
 
 # os.path.isdir -> checks whether it is directory. Also prints false if the directory does not exist in current directory
 # os.path.isfile -> checks whether it is file. Also prints false if the file does not exist in current directory
-print(os.path.isdir('anotherfile.py')) # False
+print(os.path.isdir('anotherfile.py')) # False; not a directory
 print(os.path.isfile('anotherfile.py')) # True
-print(os.path.isfile('myfile.py')) # False -> does not exists in "folder2" 
+print(os.path.isfile('myfile.py')) # False; does not exists in "folder2" 
 print(os.path.isdir('/Users/myuser/Desktop/Python/folder2')) # True
 
 # os.listdir -> shows all the files and directories in current directory
