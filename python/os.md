@@ -21,7 +21,7 @@ print(os.getcwd()) # /Users/myuser/Desktop/Python/folder2
 
 # os.path.exists -> checks whether a file or directory exists in current directory
 print(os.path.exists('anotherfile.py')) # True
-print(os.path.exists('myfile.py')) # False
+print(os.path.exists('myfile.py')) # False; "myfile.py" does not exist in "folder2"
 
 # os.path.isdir -> checks whether it is directory. Also prints false if the directory does not exist in current directory
 # os.path.isfile -> checks whether it is file. Also prints false if the file does not exist in current directory
