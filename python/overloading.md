@@ -29,7 +29,7 @@ time2 = Time(12, 30, 30)
 
 print(time1) # 11 : 25 : 30
 print(time1 + time2) # 23
-print(time2 < time1) # False
+print(time2 < time1) # False; 30 < 25
 print(time2 > time1) # True
 print(len(time1)) # 41130
 ```
