@@ -30,6 +30,6 @@ time2 = Time(12, 30, 30)
 print(time1) # 11 : 25 : 30
 print(time1 + time2) # 23; time1.hour + time2.hour
 print(time2 < time1) # False; time2.minute < time1.minute --> 30 < 25
-print(time2 > time1) # True
+print(time2 > time1) # True; time2.minute > time1.minute
 print(len(time1)) # 41130
 ```
