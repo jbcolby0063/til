@@ -31,5 +31,5 @@ print(time1) # 11 : 25 : 30; time1.hour : time1.minute : time1.second
 print(time1 + time2) # 23; time1.hour + time2.hour --> 11 + 12
 print(time2 < time1) # False; time2.minute < time1.minute --> 30 < 25
 print(time2 > time1) # True; time2.minute > time1.minute --> 30 > 25
-print(len(time1)) # 41130
+print(len(time1)) # 41130; time1.hour * 3600 + time1.minute * 60 + time1.second
 ```
