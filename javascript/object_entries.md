@@ -13,7 +13,7 @@ console.log(Object.entries(object1)) // [["a", "hello"], ["b", "world"]]
 
 It is therefore useful to get both key and value from a certain object.
 
-You can get ```[key, value]``` pairs using for loop:
+You can iterate ```[key, value]``` pairs using for loop:
 ```javascript
 const object1 = {
   a: 'hello',
