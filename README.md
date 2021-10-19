@@ -3,9 +3,12 @@
 
 My short write-ups on new things I learned from videos, editorials, and projects.  
 
-29 TILs so far...  
+30 TILs so far...  
 
 ---
+
+### C++
+- [Pointer](https://github.com/jbcolby0063/til/blob/main/c%2B%2B/pointer.md)
 
 ### Data Structure & Algorithms
 - [BFS](https://github.com/jbcolby0063/til/blob/main/algorithms/bfs.md)
