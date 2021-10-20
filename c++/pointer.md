@@ -26,7 +26,7 @@ int main()
     string b = "hello";
     string *strptr = &b; // 'strptr' points to 'b' memory address
     
-    cout << strptr << endl; // 0x7fffd695a610
+    cout << strptr << endl; // 0x7fffd695a610 // 'b' address with pointer
     cout << *strptr << endl; // hello // string value from 'b' address that 'strptr' is pointing to
     
 
