@@ -33,3 +33,23 @@ int main()
     return 0;
 }
 ```
+Arrays can be used for ```pointers```:
+```c++
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int arr[3] = {111, 222, 333};
+    int* arrptr = arr; // arrays are memory address itself, so no need to put & symbol in front
+    
+    cout << arrptr << endl; // 0x7ffd018ef21c // array memory address
+    cout << *arrptr << endl; // 111 // arr[0]
+    cout << *(arrptr + 1) << endl; // 222 // arr[1]
+    cout << *(arrptr + 2) << endl; // 333 // arr[2]
+
+    return 0;
+}
+```
+
