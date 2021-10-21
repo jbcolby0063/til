@@ -29,7 +29,9 @@ int main()
     cout << strptr << endl; // 0x7fffd695a610 // 'b' address with pointer
     cout << *strptr << endl; // hello // string value from 'b' address that 'strptr' is pointing to
     
-
+    *strptr = "world"; // changing pointer value also changes the value in memory address (the memory address corresponds to its pointer)
+    cout << b << endl; // world // 'b' value changed even though we did not directly changed the 'b' value
+    
     return 0;
 }
 ```
