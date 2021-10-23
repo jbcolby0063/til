@@ -54,4 +54,29 @@ int main()
     return 0;
 }
 ```
+```Pointers``` can be used for struct:
+```c++
+#include <iostream>
 
+using namespace std;
+
+int main()
+{
+    struct Student{
+        int score;
+        string name;
+    };
+    
+    Student s1 = Student{88, "james"};
+    
+    Student *stdptr = &s1;
+    
+    cout << stdptr << endl; // 0x7ffdf13d5090
+    cout << stdptr->score << endl; // 88
+    cout << stdptr->name << endl; // james
+    
+
+
+    return 0;
+}
+```
