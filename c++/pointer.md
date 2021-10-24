@@ -72,7 +72,7 @@ int main()
     Student *stdptr = &s1;
     
     cout << stdptr << endl; // 0x7ffdf13d5090
-    cout << stdptr->score << endl; // 88
+    cout << stdptr->score << endl; // 88 // in order to dereference the pointer value of object, you use -> instead of *
     cout << stdptr->name << endl; // james
     
 
