@@ -21,7 +21,7 @@ int main()
     
     cout << &a << endl; // 0x7fffd695a5fc // 'a' address
     cout << intptr << endl; // 0x7fffd695a5fc // 'a' address with pointer
-    cout << *intptr << endl; // 11 // to get the value inside the memory address that the pointer is pointing to, add asterisk(*) in front of pointer
+    cout << *intptr << endl; // 11 // to get the value inside the memory address that the pointer is pointing to (dereference), add asterisk(*) in front of pointer
     
     string b = "hello";
     string *strptr = &b; // 'strptr' points to 'b' memory address
