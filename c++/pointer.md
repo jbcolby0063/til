@@ -54,7 +54,7 @@ int main()
     return 0;
 }
 ```
-```Pointers``` can be used for struct objects:
+```Pointers``` can be used on struct objects:
 ```c++
 #include <iostream>
 
