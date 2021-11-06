@@ -69,7 +69,7 @@ int main()
     
     Student s1 = Student{88, "james"};
     
-    Student *stdptr = &s1;
+    Student *stdptr = &s1; // 'stdptr' points to 's1' struct memory address
     
     cout << stdptr << endl; // 0x7ffdf13d5090 // s1 address with pointer
     cout << stdptr->score << endl; // 88 // 'score' value of s1 // in order to dereference the pointer value of object, you use -> instead of *
