@@ -73,7 +73,7 @@ int main()
     
     cout << stdptr << endl; // 0x7ffdf13d5090 // s1 address with pointer
     cout << stdptr->score << endl; // 88 // 'score' value of s1 // in order to dereference the pointer value of object, you use -> instead of *
-    cout << stdptr->name << endl; // james // 'name' value of s1
+    cout << stdptr->name << endl; // james // 'name' value of s1 // use --> for object pointers
     
 
 
