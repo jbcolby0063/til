@@ -17,7 +17,7 @@ using namespace std;
 int main()
 {
     int a = 11; 
-    int *intptr = &a; // 'intptr' points to 'a' memory address
+    int *intptr = &a; // 'intptr' points to 'a' memory address (note that 'intptr' variable type matches with 'a' variable type)
     
     cout << &a << endl; // 0x7fffd695a5fc // 'a' address
     cout << intptr << endl; // 0x7fffd695a5fc // 'a' address with pointer
