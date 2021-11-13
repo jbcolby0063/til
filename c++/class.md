@@ -21,9 +21,9 @@ class Student{
 };
 
 // define default constructor, i.e., initialize variables
-Student::Student(){ // note that there is no data type for constructor function
-    gpa = -1.0;
-    name = "NoName";
+Student::Student()
+  : gpa(-1.0), name("NoName") { // note that there is no data type for constructor function
+
 }
 
 // define function setGrade()
