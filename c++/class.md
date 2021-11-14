@@ -15,7 +15,7 @@ class Student{
     void setGrade(double x); // declare function setGrade()
     void setName(string n); // declare function setName()
     void getStudentInfo(); // declare function getStudentInfo()
-  private: // data members under 'private' cannot be accessed outside of class itself. Only member functions inside the class (e.g. setGrade) can access
+  private: // data members under 'private' cannot be accessed outside of class itself. Only member functions inside the class (e.g. setGrade()) can access
     double gpa;
     string name;
 };
