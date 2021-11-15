@@ -20,7 +20,7 @@ class Student{
     string name;
 };
 
-// define default constructor, i.e., initialize variables
+// define default constructor, i.e., initialize variables without parameter values
 Student::Student()
   : gpa(-1.0), name("NoName") { // note that there is no data type for constructor function
 
@@ -58,3 +58,4 @@ int main()
     return 0;
 }
 ```
+You can also create a new object with different initialization values through [a constructor with default parameter values](https://github.com/jbcolby0063/til/blob/main/c%2B%2B/constructor_default.md).
