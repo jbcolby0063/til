@@ -3,12 +3,13 @@
 
 My short write-ups on new things I learned from videos, editorials, and projects.  
 
-31 TILs so far...  
+32 TILs so far...  
 
 ---
 
 ### C++
 - [Class](https://github.com/jbcolby0063/til/blob/main/c%2B%2B/class.md)
+- [Constructor with Default Parameter Values](https://github.com/jbcolby0063/til/blob/main/c%2B%2B/constructor_default.md)
 - [Pointer](https://github.com/jbcolby0063/til/blob/main/c%2B%2B/pointer.md)
 
 ### Data Structure & Algorithms
