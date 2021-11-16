@@ -1,6 +1,6 @@
 # Constructor with Default Parameter Values
 
-While the Student class from [Class](https://github.com/jbcolby0063/til/blob/main/c%2B%2B/class.md) has a ```constructor``` that takes no argument values, you can also define a ```constructor```
+While the <strong>Student class</strong> from [Class](https://github.com/jbcolby0063/til/blob/main/c%2B%2B/class.md) has a ```constructor``` that takes no argument values, you can also define a ```constructor```
 that takes default argument values and create an object with different initialization values using the argument(parameters):
 ```c++
 #include <iostream>
