@@ -28,7 +28,7 @@ void Student::getStudentInfo(){
 
 int main()
 {
-    Student s1; // set new object 's1' without any argument values (this will be initialized with the default parameter vaules)
+    Student s1; // set new object 's1' without any argument values (both gpa and name variables will be initialized with the default parameter vaules)
     s1.getStudentInfo(); // NoName: -1
     
     Student s2(4.0); // set new object 's2' with only gpa value for argument (then the name value will be initialized with the default parameter value "NoName")
