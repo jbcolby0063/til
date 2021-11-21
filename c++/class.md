@@ -59,3 +59,63 @@ int main()
 }
 ```
 You can also create a new object with different initialization values through [a constructor with default parameter values](https://github.com/jbcolby0063/til/blob/main/c%2B%2B/constructor_default.md).
+
+
+```c++ 
+#include <iostream>
+
+using namespace std;
+
+class Student{
+    private:
+        double score;
+        string name;
+        Student* next;
+    public:
+        Student(int setScore = -1.0, string setName = "NoName");
+        double getScore();
+        string getName();
+        void addNext(Student* s);
+        void Print();
+};
+
+
+Student::Student(int setScore, string setName): score(setScore), name(setName), next(nullptr) {}
+
+double Student::getScore(){
+    return score;
+}
+
+string Student::getName(){
+    return name;
+}
+
+void Student::addNext(Student* s){
+    next = s;
+}
+
+void Student::Print(){
+    cout << name << ": " << score;
+    if(next != nullptr){
+        cout << ", next student is " << next->getName();
+    }
+    cout << endl;
+}
+
+int main(){
+    Student* s1 = new Student(3.8, "James");
+    Student* s2 = new Student(3.6, "Mary");
+    Student* s3 = new Student(2.9, "Hannah");
+    
+    Student* cpy = s1;
+    
+    s1->addNext(s2);
+    cpy->addNext(s3);
+    
+    cpy->Print();
+    s1->Print();
+    s2->Print();
+    s3->Print();
+    return 0;
+}
+```
