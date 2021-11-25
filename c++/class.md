@@ -60,7 +60,7 @@ int main()
 ```
 You can also create a new object with different initialization values through [a constructor with default parameter values](https://github.com/jbcolby0063/til/blob/main/c%2B%2B/constructor_default.md).
 
-
+You can declare an object of same class as an attribute. The example below shows a <strong>Student</strong> object "next" is included in <strong>Student</strong> class under private. Since "next" points to different Student objects, the [pointer](https://github.com/jbcolby0063/til/blob/main/c%2B%2B/pointer.md) is used:
 ```c++ 
 #include <iostream>
 
