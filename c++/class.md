@@ -70,7 +70,7 @@ class Student{
     private:
         double score;
         string name;
-        Student* next; // a private member with same Student class 
+        Student* next; // a private member (pointer) with same Student class 
     public:
         Student(int setScore = -1.0, string setName = "NoName");
         double getScore();
