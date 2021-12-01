@@ -103,7 +103,7 @@ void Student::Print(){
 }
 
 int main(){
-    Student* s1 = new Student(3.8, "James");
+    Student* s1 = new Student(3.8, "James"); // s1 object
     Student* s2 = new Student(3.6, "Mary");
     Student* s3 = new Student(2.9, "Hannah");
     
