@@ -104,7 +104,7 @@ void Student::Print(){
 
 int main(){
     Student* s1 = new Student(3.8, "James"); // s1 object
-    Student* s2 = new Student(3.6, "Mary");
+    Student* s2 = new Student(3.6, "Mary"); // s2 object
     Student* s3 = new Student(2.9, "Hannah");
     
     Student* cpy = s1; // copy "s1" object in "cpy"
