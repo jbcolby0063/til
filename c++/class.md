@@ -107,7 +107,7 @@ int main(){
     Student* s2 = new Student(3.6, "Mary"); // "s2" object
     Student* s3 = new Student(2.9, "Hannah"); // "s3" object
     
-    Student* cpy = s1; // copy "s1" object in "cpy"
+    Student* cpy = s1; // copy "s1" object in "cpy" object
     
     s1->addNext(s2);
     cpy->addNext(s3);
