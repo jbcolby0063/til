@@ -109,7 +109,7 @@ int main(){
     
     Student* cpy = s1; // copy "s1" object in "cpy" object
     
-    s1->addNext(s2); // set "s1" next member as "s2" (link to "s2")
+    s1->addNext(s2); // set "s1" object's next member as "s2" (link to "s2")
     cpy->addNext(s3); // set "cpy" next member as "s3" (link to "s3")
     
     cpy->Print();
