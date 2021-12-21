@@ -113,7 +113,7 @@ int main(){
     cpy->addNext(s3); // assign "cpy" object's next member as "s3" (link to "s3")
     
     cpy->Print(); // James: 3, next student is Hannah
-    s1->Print();
+    s1->Print(); // James: 3, next student is Hannah
     s2->Print();
     s3->Print();
     return 0;
