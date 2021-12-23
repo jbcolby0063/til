@@ -115,7 +115,7 @@ int main(){
     cpy->Print(); // James: 3, next student is Hannah
     s1->Print(); // James: 3, next student is Hannah
     s2->Print(); // Mary: 3
-    s3->Print();
+    s3->Print(); // Hannah: 2
     return 0;
 }
 ```
