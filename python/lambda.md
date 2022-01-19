@@ -9,6 +9,13 @@ This type of function becomes handy when you need a function for a short period 
 The syntax for ```lambda``` function is:
 
 ```lambda argument(s): expression```
+```python
+# def add(a,b):
+#     return a+b
+
+add = lambda a, b: a + b # exactly same as the function above
+
+```
 
 ```Lambda``` can be used for sort key:
 ```python
