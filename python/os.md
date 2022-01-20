@@ -33,6 +33,29 @@ print(os.path.isdir('/Users/myuser/Desktop/Python/folder2')) # True
 # os.listdir -> shows all the files and directories in current directory
 print(os.listdir(os.getcwd())) # ['anotherfile.py'] 
 ```
+
+You can construct a program that searches sub directory using ```os```:
+```python
+import os
+
+def search(dirname):
+    try:
+        filenames = os.listdir(dirname) # get all sub dir as a list
+        for filename in filenames:
+            full_filename = os.path.join(dirname, filename)
+
+            if os.path.isdir(full_filename): # if this is folder, do recursion until file comes out
+                search(full_filename)
+            else:
+                ext = os.path.splitext(full_filename)[-1] # get file type
+                if ext == ".py":
+                    print(full_filename)
+    except PermissionError:
+        pass
+
+search("/")
+```
+
 More ```os``` functions can be found [here](https://docs.python.org/3/library/os.html).
 
 If you want more functions that manipulate paths, look up [os.path module](https://docs.python.org/3/library/os.path.html).
