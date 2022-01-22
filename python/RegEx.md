@@ -13,4 +13,4 @@ There are several symbols in ```RegEx``` that have special meanings, and they ar
 | x+ | repeat the preceding character x one or more times |
 | x* | repeat the preceding character x zero or more times |
 | x\|y | either the character x or y comes |
-| x? | the character x can exists or not exists |
+| x? | the character x can exists or not exist |
