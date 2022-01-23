@@ -14,3 +14,8 @@ There are several symbols in ```RegEx``` that have special meanings, and they ar
 | x* | repeat the preceding character x zero or more times |
 | x\|y | either the character x or y comes |
 | x? | the character x can exists or not exist |
+| \b | indicates the word positioned between a word and a space (e.g. er\b matches "er" in "never ")|
+| \d | indicates a digit character |
+| \s | indicates a space | 
+| \t | indicates a tab | 
+| \w | indicates any word including underscore, i.e., a-z, A-Z, 0-9, and _ |
