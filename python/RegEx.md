@@ -2,8 +2,6 @@
 
 ```RegEx```, or Regular Expression, is a search pattern used to check if a certain string contains the specified search pattern. 
 
-You can use ```RegEx``` in python by importing the <strong>re</strong> module. 
-
 There are several symbols in ```RegEx``` that have special meanings, and they are called <strong>Meta characters</strong>. Meta characters are used to define the search criteria and any text manipulation. Some of the examples are listed below:
 | Meta Characters | Meaning |
 |-----|-----|
@@ -19,3 +17,19 @@ There are several symbols in ```RegEx``` that have special meanings, and they ar
 | \s | indicates a space | 
 | \t | indicates a tab | 
 | \w | indicates any word including underscore, i.e., a-z, A-Z, 0-9, and _ |
+
+You can use ```RegEx``` in python by importing the <strong>re</strong> module. 
+
+The <strong>re</strong> module provides several functions that allows us to match a certain string with the specified search pattern.
+```python
+import re 
+
+# match
+p = re.compile('[a-z]+') # Regular Expression: repeat an alphabet from a to z 1 or more times
+
+m = p.match('python') 
+print(m) # output: <re.Match object; span=(0, 6), match='python'> -> starting the match from index 0
+
+n = p.match('3 python') 
+print(n) # output: None -> doesn't match because of 3 (non-alphabet)
+```
