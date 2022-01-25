@@ -29,6 +29,10 @@ p = re.compile('[a-z]+') # Regular Expression: repeat an alphabet from a to z 1 
 
 m = p.match('python') 
 print(m) # output: <re.Match object; span=(0, 6), match='python'> -> starting the match from index 0
+print(m.group()) # output: python -> matched string
+print(m.start()) # output: 0
+print(m.end()) # output: 6
+print(m.span()) # output: (0, 6)
 
 n = p.match('3 python') 
 print(n) # output: None -> doesn't match because of 3 (non-alphabet)
