@@ -24,9 +24,9 @@ The <strong>re</strong> module provides several functions that allows us to matc
 ```python
 import re 
 
-# match
 p = re.compile('[a-z]+') # Regular Expression: repeat an alphabet from a to z 1 or more times
 
+# match
 m = p.match('python') 
 print(m) # output: <re.Match object; span=(0, 6), match='python'> -> starting the match from index 0
 print(m.group()) # output: python -> matched string
@@ -34,6 +34,11 @@ print(m.start()) # output: 0
 print(m.end()) # output: 6
 print(m.span()) # output: (0, 6)
 
-n = p.match('3 python') 
-print(n) # output: None -> doesn't match because of 3 (non-alphabet)
+m2 = p.match('3 python') 
+print(m2) # output: None -> doesn't match because of 3 (non-alphabet)
+
+#search
+s = p.search('3 python') 
+
+print(s) # output: <re.Match object; span=(2, 8), match='python'> -> match from index 2, even though non-alphabet is included in the string
 ```
