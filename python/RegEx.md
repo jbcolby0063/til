@@ -37,8 +37,13 @@ print(m.span()) # output: (0, 6)
 m2 = p.match('3 python') 
 print(m2) # output: None -> doesn't match because of 3 (non-alphabet)
 
-#search
+# search
 s = p.search('3 python') 
 
 print(s) # output: <re.Match object; span=(2, 8), match='python'> -> match from index 2, even though non-alphabet is included in the string
+
+# findall
+f = p.findall('life is too short') 
+
+print(f) # output: ['life', 'is', 'too', 'short'] -> list of strings that contain reg exp search pattern
 ```
