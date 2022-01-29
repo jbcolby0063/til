@@ -46,4 +46,10 @@ print(s) # output: <re.Match object; span=(2, 8), match='python'> -> match from 
 f = p.findall('life is too short') 
 
 print(f) # output: ['life', 'is', 'too', 'short'] -> list of strings that contain reg exp search pattern
+
+# finditer
+i = p.finditer('life is too short') # <callable_iterator object at 0x7fa397ba0eb0> -> iterable object
+
+for r in i:
+    print(r) # output: <re.Match object; span=(0, 4), match='life'> <re.Match object; span=(5, 7), match='is'> <re.Match object; span=(8, 11), match='too'> <re.Match object; span=(12, 17), match='short'>
 ```
