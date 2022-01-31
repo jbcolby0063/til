@@ -53,3 +53,13 @@ i = p.finditer('life is too short') # <callable_iterator object at 0x7fa397ba0eb
 for r in i:
     print(r) # output: <re.Match object; span=(0, 4), match='life'>, <re.Match object; span=(5, 7), match='is'>, <re.Match object; span=(8, 11), match='too'>, <re.Match object; span=(12, 17), match='short'>
 ```
+
+There are several options for ```re.compile()``` to extend its functionality:
+```python
+import re
+
+# DOTALL, S
+p = re.compile('a.b', re.DOTALL) # allow '.' character to match with any character including newline '\n'
+m = p.match('a\nb') 
+print(m) # output: <re.Match object; span=(0, 3), match='a\nb'>
+```
