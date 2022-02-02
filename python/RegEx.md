@@ -55,11 +55,21 @@ for r in i:
 ```
 
 There are several options for ```re.compile()``` to extend its functionality:
+1. <strong>DOTALL, S</strong>: allow '.' character to match with any character including newline '\n'
 ```python
+# DOTALL, S
 import re
 
-# DOTALL, S
-p = re.compile('a.b', re.DOTALL) # allow '.' character to match with any character including newline '\n'
+p = re.compile('a.b', re.DOTALL) 
 m = p.match('a\nb') 
 print(m) # output: <re.Match object; span=(0, 3), match='a\nb'>
+```
+2. <strong>IGNORECASE, I</strong>: ignore uppercases/lowercases
+```python
+# IGNORECASE, I
+import re
+
+p = re.compile('[a-z]+', re.IGNORECASE)
+print(p.match('python')) # output: <re.Match object; span=(0, 6), match='python'>
+print(p.match('PyThon')) # output: <re.Match object; span=(0, 6), match='PyThon'> 
 ```
