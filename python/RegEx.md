@@ -73,3 +73,17 @@ p = re.compile('[a-z]+', re.IGNORECASE)
 print(p.match('python')) # output: <re.Match object; span=(0, 6), match='python'>
 print(p.match('PyThon')) # output: <re.Match object; span=(0, 6), match='PyThon'> 
 ```
+3. <strong>MULTILINE, M</strong>: check strings in next line whether they match the search pattern
+```python
+# MULTILINE, M
+import re
+p = re.compile("^python\s\w+", re.MULTILINE)
+
+data = """python one
+life is too short
+python two
+you need python
+python three"""
+
+print(p.findall(data)) # ['python one', 'python two', 'python three']
+```
