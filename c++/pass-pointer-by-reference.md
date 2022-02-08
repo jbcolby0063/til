@@ -1,5 +1,7 @@
 # Pass Pointer By Reference
 
+If you want to modify a pointer itself through function, you need to ```pass the pointer by reference```.
+
 Without passing pointer by reference:
 ```c++
 #include <iostream>
