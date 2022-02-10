@@ -11,7 +11,7 @@ using namespace std;
 void passPtrByReference(int* ptr){ // just passing a pointer
     int* new_ptr = new int[5]{66, 77, 88, 99, 100};
     delete [] ptr;
-    ptr = new_ptr; // new_ptr gets deleted after this function ends
+    ptr = new_ptr;
 }
 
 int main()
@@ -28,7 +28,7 @@ int main()
 
 // output
 // Before: 22
-// After: 0
+// After: 0 // ptr is deleted even though we assigned new_ptr in passPtrByReference() function
 ```
 
 Passing pointer by reference:
