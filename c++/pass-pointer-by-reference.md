@@ -57,5 +57,5 @@ int main()
 
 // output
 // Before: 22
-// After: 77
+// After: 77 // ptr is assigned with new_ptr
 ```
