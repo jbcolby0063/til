@@ -1,6 +1,6 @@
 # Pass Pointer By Reference
 
-If you want to modify a pointer itself through a function, you need to ```pass the pointer by reference```. Since reference allows a called function to modify a local variable from the caller function, pointer defined from other function can be modified through reference "&".
+If you want to modify a pointer itself through a function, you need to ```pass the pointer by reference```. Since the reference allows a called function (e.g. passPtrByReference()) to modify a local variable from the caller function (e.g. main()), pointer defined from other function can be modified through reference "&".
 
 Without passing pointer by reference:
 ```c++
