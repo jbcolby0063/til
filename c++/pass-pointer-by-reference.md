@@ -40,7 +40,7 @@ using namespace std;
 void passPtrByReference(int* &ptr){ // add & symbol since we want to pass by reference 
     int* new_ptr = new int[5]{66, 77, 88, 99, 100};
     delete [] ptr;
-    ptr = new_ptr;
+    ptr = new_ptr; // able to modify pointer defined from main() function
 }
 
 int main()
