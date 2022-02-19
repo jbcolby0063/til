@@ -8,7 +8,7 @@ Without passing pointer by reference:
 
 using namespace std;
 
-void passPtrByReference(int* ptr){ // just passing a pointer
+void passPtrByReference(int* ptr){ // just passing a pointer "ptr"
     int* new_ptr = new int[5]{66, 77, 88, 99, 100};
     delete [] ptr;
     ptr = new_ptr;
