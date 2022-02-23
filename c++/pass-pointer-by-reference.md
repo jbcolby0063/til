@@ -28,7 +28,7 @@ int main()
 
 // output
 // Before: 22
-// After: 0 // ptr is deleted even though we assigned new_ptr in passPtrByReference() function
+// After: 0 // "ptr" is deleted even though we assigned new_ptr in passPtrByReference() function
 ```
 
 Passing pointer by reference:
@@ -57,5 +57,5 @@ int main()
 
 // output
 // Before: 22
-// After: 77 // ptr is assigned with new_ptr values
+// After: 77 // "ptr" is assigned with new_ptr values
 ```
