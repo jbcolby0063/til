@@ -31,7 +31,7 @@ int main()
 // After: 0 // "ptr" is deleted even though we assigned new_ptr in passPtrByReference() function
 ```
 
-Passing pointer by reference:
+With passing pointer by reference:
 ```c++
 #include <iostream>
 
