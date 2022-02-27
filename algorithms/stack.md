@@ -4,6 +4,8 @@
 
 So a data that comes in first is the last one to leave. 
 
+A good example will be a browser back button or an undo feature in the word document.
+
 Just think about a ```stack``` of plates as an example:
 
 [![stack1.png](https://i.postimg.cc/sXn9g1xM/stack1.png)](https://postimg.cc/9R7qxmG2)
