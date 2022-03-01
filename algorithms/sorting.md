@@ -33,21 +33,22 @@ for i in range(len(array)):
     array[i], array[min_index] = array[min_index], array[i] # swap the minimum element and the beginning element
 print(array) # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```
-3. Insertion Sort:
-   - elements from an unsorted array are selected and placed at the right position. This is repeated until the array becomes sorted. 
-   - time complexity is O(N^2). If the array is already almost sorted, the time complexity becomes O(N)
-   - 4 3 2 10 --> 3 4 2 10 --> 2 3 4 10
-   ```python
-   array = [7, 5, 9, 0, 3, 1, 6, 2, 4, 8]
+C. Insertion Sort:
+- each element from an unsorted array is compared with all the elements located to its left and insert at the right position. This is repeated until the array becomes sorted.
+- time complexity is O(N^2). However, if the array is already almost sorted, the time complexity becomes O(N) since we do not need to do the comparison if the elements on the left side are already smaller (sorted). 
+- 4 3 2 10 --> 3 4 2 10 --> 2 3 4 10
+```python
+#Python
+array = [7, 5, 9, 0, 3, 1, 6, 2, 4, 8]
 
-   for i in range(1, len(array)):
-       for j in range(i, 0, -1): # from i to 0 index of an array, check each element (reverse order)
-           if array[j] < array[j - 1]: # if a element in front is greater than the current element, swap position 
-               array[j], array[j - 1] = array[j - 1], array[j]
-           else: # if a element in the front is smaller than the current element, stop since all the other elements in front are going to be smaller than the current element
-               break 
-   print(array) # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-   ```
+for i in range(1, len(array)):
+    for j in range(i, 0, -1): # from i to 0 index of an array, check each element (reverse order)
+        if array[j] < array[j - 1]: # if an element in front is greater than the current element, swap position 
+            array[j], array[j - 1] = array[j - 1], array[j]
+        else: # if an element in the front is smaller than the current element, stop since all the other elements in front are going to be smaller than the current element
+            break 
+print(array) # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+```
 4. Quick Sort:
    - picks the first element in an unsorted array as a pivot and divides the given array based on the selected pivot
    - process: pick the first element as a pivot --> from left to right, find an element that is bigger than the pivot --> from right to left, find an element
