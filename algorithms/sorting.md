@@ -49,6 +49,27 @@ for i in range(1, len(array)):
             break 
 print(array) # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```
+D. Bubble Sort:
+- Compares a pair of adjacent elements and swaps right to left if it is smaller.  Goes through all pairs and repeats the process n times to ensure every element has had the chance to move anywhere in the list.
+- time complexity is O(N^2) because it visits all pairs of adjacent elements and repeats this process n times. 
+- <strong>1</strong> <strong>4</strong> 2 5 8 -> 1 <strong>4</strong> <strong>2</strong> 5 8 -> 1 <strong>2</strong> <strong>4</strong> 5 8 -> 1 2 <strong>4</strong> <strong>5</strong> 8 -> 1 2 4 <strong>5</strong> <strong>8</strong>
+```c++
+//C++
+void bubbleSort(int arr[], int n) 
+{ 
+    for (int i = 0; i < n-1; i++){ // repeat the process n times
+        for(int j = 0; j < n - i - 1; j++){ 
+            if(arr[j] > arr[j+1]){ // compare with an adjacent element
+                int temp = arr[j];
+                arr[j] = arr[j+1];
+                arr[j+1] = temp;
+            }
+        }
+    }     
+      
+} 
+```
+
 4. Quick Sort:
    - picks the first element in an unsorted array as a pivot and divides the given array based on the selected pivot
    - process: pick the first element as a pivot --> from left to right, find an element that is bigger than the pivot --> from right to left, find an element
