@@ -5,7 +5,7 @@
 There are various sorting algorithms that use different design methods.
 
 ## 1. Simple/Iterative Method (usually has O(N^2) time complexity)
- A. Standard Sort: 
+A. Standard Sort: 
  - use ```sort``` library (for Python)
  - time complexity of O(NlogN)
 ```python 
@@ -70,7 +70,13 @@ void bubbleSort(int arr[], int n)
 } 
 ```
 
-4. Quick Sort:
+## 2. Divide-and-Conquer Method (usually has O(NlogN) time complexity)
+A. Merge Sort:
+- splits the array into halves, repeatedly calling itself until the array size is 1 or 2 (recursion).  After this, return up the call stack and apply a “merge” algorithm, which is just reading through the two adjacent halves and selecting the next smallest element from each in order to create the new merged array.
+- [Merge Sort Visualization](https://www.youtube.com/watch?v=JSceec-wEyw)
+- average time complexity is O(NlogN) since the array is divided into logN levels and merge runs N times each level. The time complexity becomes O(N) when the array is already sorted and all we need to do is just use an in-place strategy since arr1[last] <= arr2[first] (no merge needed). 
+
+B. Quick Sort:
    - picks the first element in an unsorted array as a pivot and divides the given array based on the selected pivot
    - process: pick the first element as a pivot --> from left to right, find an element that is bigger than the pivot --> from right to left, find an element
      that is smaller than the pivot --> swap these two elements' positions --> repeat this until the bigger element position is on the right side of the smaller 
