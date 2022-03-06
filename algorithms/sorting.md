@@ -75,6 +75,18 @@ A. Merge Sort:
 - splits the array into halves, repeatedly calling itself until the array size is 1 or 2 (recursion).  After this, return up the call stack and apply a “merge” algorithm, which is just reading through the two adjacent halves and selecting the next smallest element from each in order to create the new merged array.
 - [Merge Sort Visualization](https://www.youtube.com/watch?v=JSceec-wEyw)
 - average time complexity is O(NlogN) since the array is divided into logN levels and merge runs N times each level. The time complexity becomes O(N) when the array is already sorted and all we need to do is just use an in-place strategy since arr1[last] <= arr2[first] (no merge is needed). 
+```c++
+void mergeSort(int array[], int const begin, int const end)
+{
+    if (begin >= end){
+        return; // Returns recursively
+    }
+    auto mid = begin + (end - begin) / 2;
+    mergeSort(array, begin, mid);
+    mergeSort(array, mid + 1, end);
+    merge(array, begin, mid, end);
+}
+```
 
 B. Quick Sort:
    - picks the first element in an unsorted array as a pivot and divides the given array based on the selected pivot
