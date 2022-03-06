@@ -76,6 +76,7 @@ A. Merge Sort:
 - [Merge Sort Visualization](https://www.youtube.com/watch?v=JSceec-wEyw)
 - average time complexity is O(NlogN) since the array is divided into logN levels and merge runs N times each level. The time complexity becomes O(N) when the array is already sorted and all we need to do is just use an in-place strategy since arr1[last] <= arr2[first] (no merge is needed). 
 ```c++
+// C++
 void mergeSort(int array[], int const begin, int const end)
 {
     if (begin >= end){
