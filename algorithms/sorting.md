@@ -83,9 +83,9 @@ void mergeSort(int array[], int const begin, int const end)
         return; // Returns recursively
     }
     auto mid = begin + (end - begin) / 2;
-    mergeSort(array, begin, mid);
+    mergeSort(array, begin, mid); // recursively call itself until size becomes 1
     mergeSort(array, mid + 1, end);
-    merge(array, begin, mid, end);
+    merge(array, begin, mid, end); // merge two halves
 }
 ```
 
