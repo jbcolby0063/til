@@ -73,8 +73,8 @@ void bubbleSort(int arr[], int n)
 ## 2. Divide-and-Conquer Method (usually has O(NlogN) time complexity)
 A. Merge Sort:
 - splits the array into halves, repeatedly calling itself until the array size is 1 or 2 (recursion).  After this, return up the call stack and apply a “merge” algorithm, which is just reading through the two adjacent halves and selecting the next smallest element from each in order to create the new merged array.
-- [Merge Sort Visualization](https://www.youtube.com/watch?v=JSceec-wEyw)
 - average time complexity is O(NlogN) since the array is divided into logN levels and merge runs N times each level. The time complexity becomes O(N) when the array is already sorted and all we need to do is just use an in-place strategy since arr1[last] <= arr2[first] (no merge is needed). 
+- [Merge Sort Visualization](https://www.youtube.com/watch?v=JSceec-wEyw)
 ```c++
 // C++
 void mergeSort(int array[], int const begin, int const end)
@@ -90,57 +90,60 @@ void mergeSort(int array[], int const begin, int const end)
 ```
 
 B. Quick Sort:
-   - picks the first element in an unsorted array as a pivot and divides the given array based on the selected pivot
-   - process: pick the first element as a pivot --> from left to right, find an element that is bigger than the pivot --> from right to left, find an element
-     that is smaller than the pivot --> swap these two elements' positions --> repeat this until the bigger element position is on the right side of the smaller 
-     element position --> place the pivot between them and divide the array around the pivot --> eventually all smaller elements will be placed before pivot and
-     all bigger elements will be placed after pivot --> do the same thing with the divided arrays
-   - 3(pivot) 2 4 5 1 --> 3(pivot) 2 4(bigger) 5 1(smaller) --> 3(pivot) 2 1 5 4 --> 3(pivot) 2 1(smaller) 5(bigger) 4 --> 2 1 3 5 4
-   - time complexity of O(NlogN) since it divides the array by half every time. But if the array is already almost sorted, quick sort can be inefficient, with 
-     O(N^2)
-     
-   Method 1
-   ```python
-   array = [5, 7, 9, 0, 3, 1, 6, 2, 4, 8]
+- picks the first element in an unsorted array as a pivot and divides the given array based on the selected pivot
+- process: pick the first element as a pivot --> from left to right, find an element that is bigger than the pivot --> from right to left, find an element
+  that is smaller than the pivot --> swap these two elements' positions --> repeat this until the bigger element position is on the right side of the smaller 
+  element position --> place the pivot between them and divide the array around the pivot --> eventually all smaller elements will be placed before pivot and
+  all bigger elements will be placed after pivot --> do the same thing with the divided arrays
+- <strong>3(pivot)</strong> 2 4 5 1 --> <strong>3(pivot)</strong> 2 <strong>4(bigger)</strong> 5 <strong>1(smaller)</strong> --> <strong>3(pivot)</strong> 2 1 5 4 --> <strong>3(pivot)</strong> 2 <strong>1(smaller)</strong> <strong>5(bigger)</strong> 4 --> 2 1 3 5 4
+- time complexity of O(NlogN) since it divides the array by half every time. But if the array is already almost sorted, quick sort can be inefficient, with 
+  O(N^2)
+- [Quick Sort Visualization](https://www.youtube.com/watch?v=PgBzjlCcFvc)
 
-   def quick_sort(array):
-       if len(array) <= 1: # if there is nothing to sort in the array 
-           return array
-       pivot = array[0]
-       tail = array[1:]
-       left = [x for x in tail if pivot > x] # elements smaller than pivot
-       right = [x for x in tail if pivot < x] # elements bigger than pivot 
+Method 1
+```python
+# Python
+array = [5, 7, 9, 0, 3, 1, 6, 2, 4, 8]
 
-       return quick_sort(left) + [pivot] + quick_sort(right) # use recursive function for divided arrays 
+def quick_sort(array):
+    if len(array) <= 1: # if there is nothing to sort in the array 
+        return array
+    pivot = array[0]
+    tail = array[1:]
+    left = [x for x in tail if pivot > x] # elements smaller than pivot
+    right = [x for x in tail if pivot < x] # elements bigger than pivot 
 
-   print(quick_sort(array)) # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-   ```
-   Method 2
-   ```python
-   array = [5, 7, 9, 0, 3, 1, 6, 2, 4, 8]
+    return quick_sort(left) + [pivot] + quick_sort(right) # use recursive function for divided arrays 
 
-   def quick_sort(array, start, end):
-       if start >= end: # if there is nothing to sort
-           return 
-       pivot = start
-       left = start + 1
-       right = end
-       while left <= right: # repeat until the bigger element position is on the right side of the smaller element position
-           while(left <= end and array[pivot] >= array[left]): # find an element that is bigger than pivot
-               left += 1
-           while(right > start and array[pivot] <= array[right]): # find an element that is smaller than pivot
-               right -= 1
-           if left > right: # if the bigger element position is on the right side of the smaller element position
-               array[right], array[pivot] = array[pivot], array[right] # place pivot between them
-           else: # if not, switch bigger element and smaller element positions 
-               array[right], array[left] = array[left], array[right]
-       # divide the array 
-       quick_sort(array, start, right - 1)
-       quick_sort(array, right + 1, end)
+print(quick_sort(array)) # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+```
+Method 2
+```python
+# Python
+array = [5, 7, 9, 0, 3, 1, 6, 2, 4, 8]
 
-   quick_sort(array, 0, len(array) - 1)
-   print(array) # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-   ```
+def quick_sort(array, start, end):
+    if start >= end: # if there is nothing to sort
+        return 
+    pivot = start
+    left = start + 1
+    right = end
+    while left <= right: # repeat until the bigger element position is on the right side of the smaller element position
+        while(left <= end and array[pivot] >= array[left]): # find an element that is bigger than pivot
+            left += 1
+        while(right > start and array[pivot] <= array[right]): # find an element that is smaller than pivot
+            right -= 1
+        if left > right: # if the bigger element position is on the right side of the smaller element position
+            array[right], array[pivot] = array[pivot], array[right] # place pivot between them
+        else: # if not, switch bigger element and smaller element positions 
+            array[right], array[left] = array[left], array[right]
+    # divide the array 
+    quick_sort(array, start, right - 1)
+    quick_sort(array, right + 1, end)
+
+quick_sort(array, 0, len(array) - 1)
+print(array) # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+```
 5. Counting Sort:
    - sorts an element in an array by counting the number of occurrences of each element 
    - guarantees the time complexity of O(N + K) if the number of elements are N and maximum is K. However, it can be a memory waste when the elements in the array are just 0 and 999,999
