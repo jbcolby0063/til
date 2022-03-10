@@ -93,8 +93,7 @@ B. Quick Sort:
 - picks the first element in an unsorted array as a pivot and divides the given array based on the selected pivot
 - process: pick the first element as a pivot --> from left to right, find an element that is bigger than the pivot --> from right to left, find an element
   that is smaller than the pivot --> swap these two elements' positions --> repeat this until the bigger element position is on the right side of the smaller 
-  element position --> place the pivot between them and divide the array around the pivot --> eventually all smaller elements will be placed before pivot and
-  all bigger elements will be placed after pivot --> do the same thing with the divided arrays
+  element position --> place the pivot between them and divide the array into two based on the pivot --> eventually all smaller elements will be placed before    pivot and all bigger elements will be placed after pivot --> do the same process (recursion) with the divided arrays
 - <strong>3(pivot)</strong> 2 4 5 1 --> <strong>3(pivot)</strong> 2 <strong>4(bigger)</strong> 5 <strong>1(smaller)</strong> --> <strong>3(pivot)</strong> 2 1 5 4 --> <strong>3(pivot)</strong> 2 <strong>1(smaller)</strong> <strong>5(bigger)</strong> 4 --> 2 1 3 5 4
 - time complexity of O(NlogN) since it divides the array by half every time. But if the array is already almost sorted, quick sort can be inefficient, with 
   O(N^2)
