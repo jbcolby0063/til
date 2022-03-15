@@ -148,6 +148,7 @@ A. Counting Sort:
 - sorts the elements in an array by counting the number of occurrences of each element 
 - create a bucket that can store the number of occurrences for each element --> visit each element and store the number of times a certain element occurred --> after storing all data, print each element based on their number of occurrences
 - guarantees the time complexity of O(N + K) if the number of elements are N and maximum is K. However, it can be a memory waste when the elements in the array are just 0 and 999,999
+- [Counting Sort Visualization](https://www.youtube.com/watch?v=7zuGmKfUt7s)
 ```python
 # Python
 array = [7, 5, 9, 0, 3, 1, 6, 2, 9, 1, 4, 8, 0, 5, 2]
