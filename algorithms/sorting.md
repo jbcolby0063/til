@@ -94,7 +94,7 @@ B. Quick Sort:
 - process: pick the first element as a pivot --> from left to right, find an element that is bigger than the pivot --> from right to left, find an element
   that is smaller than the pivot --> swap these two elements' positions --> repeat this until the bigger element position is on the right side of the smaller 
   element position --> place the pivot between them and divide the array into two based on the pivot --> eventually all smaller elements will be placed before    pivot and all bigger elements will be placed after pivot --> do the same process (recursion) with the divided arrays
-- <strong>3(pivot)</strong> 2 4 5 1 --> <strong>3(pivot)</strong> 2 <strong>4(bigger)</strong> 5 <strong>1(smaller)</strong> --> <strong>3(pivot)</strong> 2 1 5 4 --> <strong>3(pivot)</strong> 2 <strong>1(smaller)</strong> <strong>5(bigger)</strong> 4 --> 2 1 3 5 4
+- <strong>3(pivot)</strong> 2 4 5 1 --> <strong>3(pivot)</strong> 2 <strong>4(bigger)</strong> 5 <strong>1(smaller)</strong> --> <strong>3(pivot)</strong> 2 1 5 4 --> <strong>3(pivot)</strong> 2 <strong>1(smaller)</strong> <strong>5(bigger)</strong> 4 --> 2 1 3 5 4 --> ...
 - time complexity of O(NlogN) since it divides the array into logN levels and sorting occurs while doing the partition (or division), which runs in N times each level. But if the array is already almost sorted, quick sort can be inefficient, with 
   O(N^2)
 - [Quick Sort Visualization](https://www.youtube.com/watch?v=PgBzjlCcFvc)
@@ -146,7 +146,7 @@ print(array) # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 ## 3. Non-comparative Method (usually has O(n+k) time complexity)
 A. Counting Sort:
 - sorts the elements in an array by counting the number of occurrences of each element 
-- create a bucket that can store the number of occurrences for each element --> visit each element and store the number of times a certain element occurred --> after storing all data, print each element based on their number of occurrences
+- create a bucket that can store the number of occurrences for each element (therefore, the size of bucket should be the maximum number of the array) --> visit each element and store the number of times a certain element occurred --> after storing all number of occurrences, modify bucket by adding previous counts --> place the elements in their correct positions based on the bucket
 - guarantees the time complexity of O(N + K) if the number of elements are N and maximum is K. However, it can be a memory waste when the elements in the array are just 0 and 999,999
 - [Counting Sort Visualization](https://www.youtube.com/watch?v=7zuGmKfUt7s)
 ```python
@@ -159,3 +159,5 @@ for i in range(len(lst)):
     for j in range(lst[i]): # print each element based on their number of occurrences
         print(i, end=" ") # 0 0 1 1 2 2 3 4 5 5 6 7 8 9 9 
 ```
+
+B. Bucket Sort:
