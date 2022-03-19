@@ -162,3 +162,4 @@ for i in range(len(lst)):
 
 B. Bucket Sort:
 - stores the actual element in the bucket rather than just a count and, depending on the number of buckets, it may require a sub-sorting algorithm to keep the buckets ordered.
+- [Bucket Sort Visualization](https://www.youtube.com/watch?v=VuXbEb5ywrU)
