@@ -142,12 +142,12 @@ def quick_sort(array, start, end):
 
 quick_sort(array, 0, len(array) - 1)
 print(array) # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-```
-## 3. Non-comparative Method (usually has O(n+k) time complexity)
+``` 
+## 3. Non-comparative Method (usually has O(N + K) time complexity)
 A. Counting Sort:
 - sorts the elements in an array by counting the number of occurrences of each element 
 - create a bucket that can store the number of occurrences for each element (therefore, the size of bucket should be the maximum number of the array) --> visit each element and store the number of times a certain element occurred --> after storing all number of occurrences, modify bucket by adding previous counts --> place the elements in their correct positions based on the bucket
-- guarantees the time complexity of O(N + K) if the number of elements are N and maximum is K. However, it can be a memory waste when the elements in the array are just 0 and 999,999
+- guarantees the time complexity of O(N + K) if the number of elements are N and maximum is K. However, it can be a memory waste when the elements in the array are just 0 and 999,999 (wasting the memory of bucket from index 1 to index 999,998) 
 - [Counting Sort Visualization](https://www.youtube.com/watch?v=7zuGmKfUt7s)
 ```python
 # Python
@@ -162,4 +162,5 @@ for i in range(len(lst)):
 
 B. Bucket Sort:
 - stores the actual element in the bucket rather than just a count and, depending on the number of buckets, it may require a sub-sorting algorithm to keep the buckets ordered.
+- time complexity of O(N + K) if the number of elements are N and the maximum value of the array is K (remember the size of bucket was the maximum value of the given array). 
 - [Bucket Sort Visualization](https://www.youtube.com/watch?v=VuXbEb5ywrU)
