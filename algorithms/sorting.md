@@ -161,6 +161,6 @@ for i in range(len(lst)):
 ```
 
 B. Bucket Sort:
-- stores the actual element in the bucket rather than just a count and, depending on the number of buckets, it may require a sub-sorting algorithm to keep the buckets ordered.
+- stores the actual element in the bucket rather than just a count and, depending on the number of buckets, it may require a sub-sorting algorithm (e.g. insertion sort) to keep the buckets ordered.
 - time complexity of O(N + K) if the number of elements are N and the maximum value of the array is K (remember the size of bucket was the maximum value of the given array). 
 - [Bucket Sort Visualization](https://www.youtube.com/watch?v=VuXbEb5ywrU)
