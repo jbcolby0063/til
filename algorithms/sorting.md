@@ -165,3 +165,29 @@ B. Bucket Sort:
 - create bucket with size of maximum value from the given array -> loop over the elements and put them inside the bucket room that corresponds to the key of the element ->  after done looping, go over the buckets and arrange each elements in order using a sub-sorting algorithm
 - time complexity of O(N + K) if the number of elements are N and the maximum value of the array is K (remember the size of bucket was the maximum value of the given array). 
 - [Bucket Sort Visualization](https://www.youtube.com/watch?v=VuXbEb5ywrU)
+```c++
+// C++
+void bucketSort(float arr[], int n)
+{
+     
+    // 1) Create n empty buckets
+    vector<float> b[n];
+ 
+    // 2) Put array elements
+    // in different buckets
+    for (int i = 0; i < n; i++) {
+        int bi = n * arr[i]; // Index in bucket
+        b[bi].push_back(arr[i]);
+    }
+ 
+    // 3) Sort individual buckets
+    for (int i = 0; i < n; i++)
+        sort(b[i].begin(), b[i].end());
+ 
+    // 4) Concatenate all buckets into arr[]
+    int index = 0;
+    for (int i = 0; i < n; i++)
+        for (int j = 0; j < b[i].size(); j++)
+            arr[index++] = b[i][j];
+}
+```
