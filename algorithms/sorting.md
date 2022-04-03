@@ -37,6 +37,7 @@ C. Insertion Sort:
 - each element from an unsorted array is compared with all the elements located to its left and insert at the right position. This is repeated until the array becomes sorted.
 - time complexity is O(N^2). However, if the array is already almost sorted, the time complexity becomes O(N) since we do not need to do the comparison if the elements on the left side are already smaller (sorted). 
 - 4 3 2 10 --> 3 4 2 10 --> 2 3 4 10
+- [Insertion Sort Visualization](https://www.youtube.com/watch?v=OGzPmgsI-pQ)
 ```python
 #Python
 array = [7, 5, 9, 0, 3, 1, 6, 2, 4, 8]
