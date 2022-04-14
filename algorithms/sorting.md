@@ -195,3 +195,4 @@ void bucketSort(float arr[], int n)
 
 C. Radix Sort:
 - creates buckets to hold counts of a single digit from each element.  For base 10 integers, we use 10 buckets, and we place them in the bucket corresponding to their index.  For example, we use an array to manage the buckets, and for the numbers 10, 15, and 12, they will go into indices 0, 5, and 2 based on their last digit, respectively.  We reorder the list based on the counts in each bucket and repeat the process for each digit (10’s, then 100’s, etc.)
+- [Radix Sort Visualization](https://www.youtube.com/watch?v=nu4gDuFabIM)
