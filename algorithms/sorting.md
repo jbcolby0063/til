@@ -54,6 +54,7 @@ D. Bubble Sort:
 - Compares a pair of adjacent elements and swaps right to left if it is smaller.  Goes through all pairs and repeats the process n times to ensure every element has had the chance to move anywhere in the list.
 - time complexity is O(N^2) because it visits all pairs of adjacent elements and repeats this process n times. 
 - <strong>1</strong> <strong>4</strong> 2 5 8 -> 1 <strong>4</strong> <strong>2</strong> 5 8 -> 1 <strong>2</strong> <strong>4</strong> 5 8 -> 1 2 <strong>4</strong> <strong>5</strong> 8 -> 1 2 4 <strong>5</strong> <strong>8</strong>
+- [Bubble Sort Visualization](https://www.youtube.com/watch?v=nmhjrI-aW5o)
 ```c++
 //C++
 void bubbleSort(int arr[], int n) 
