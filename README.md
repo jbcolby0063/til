@@ -3,7 +3,7 @@
 
 My short write-ups on new things I learned from videos, editorials, and projects.  
 
-34 TILs so far...  
+35 TILs so far...  
 
 ---
 
@@ -43,6 +43,7 @@ My short write-ups on new things I learned from videos, editorials, and projects
 - [OS](https://github.com/jbcolby0063/til/blob/main/python/os.md)
 - [overloading](https://github.com/jbcolby0063/til/blob/main/python/overloading.md)
 - [RegEx](https://github.com/jbcolby0063/til/blob/main/python/RegEx.md)
+- [strip](https://github.com/jbcolby0063/til/blob/main/python/strip.md)
 
 ### React
 - [Basic Structure](https://github.com/jbcolby0063/til/blob/main/react/basic-structure.md)
